@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  /*display: inline-block;*/
+  border: none;
+  background: #f1f1f1;
+  /*box-sizing: border-box;*/
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.bg-img{
+    background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg);
+    min-height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    left: 25%;
+    margin-top : 50px;
+    max-width: 600px;
+    padding: 16px;
+    background-color: white;
+    margin-left: 40px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 100%;
+}
+
+
+        input[type=radio] {
+            -webkit-appearance: none;
+           /* width: 90px;*/
+            height: 60px;
+            border: none;
+            cursor: pointer;
+            transition: border .2s ease;
+            filter: grayscale(100%);
+            margin: 0 5px;
+            width: 15%;
+            transition: all .2s ease;
+            }
+
+        input[type=radio]:hover, input[type=radio]:checked {
+                filter: grayscale(0);
+            }
+            
+            input[type=radio]:focus {
+                outline: 0;
+            }
+            
+            /*.happy {
+                background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/happy_ampvnc.svg') center;
+                background-size: auto;
+                background-repeat: no-repeat;
+            }
+            
+            .neutral {
+                background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/neutral_t3q8hz.svg') center;
+                background-size: auto;
+                background-repeat: no-repeat;
+            }
+            .sad {
+                
+                background: url('https://res.cloudinary.com/turdlife/image/upload/v1492864443/sad_bj1tuj.svg') center;
+                background-size: auto;
+                background-repeat: no-repeat;
+            }*/
+        
+    
+
+/*.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}*/
+</style>
+</head>
+<body>
+
+
+
+<div class="bg-img">
+  <br> <br> <br> <br> 
+  <center><h1 style="margin-top: 2%;">Feedback Form</h1></center>
+  <form action="/action_page.php" class="container">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email id">
+    <label for="subject">Feedback</label>
+    <textarea id="subject" maxlength="200" name="subject" placeholder="Write something..(200 Characters)" style="height:100px"></textarea>
+
+    <label for="rating">Rate Your Experience</label></br></br>
+
+    <center><input type="radio" name="smiley" value="angry" class='far fa-angry' style='font-size:48px;color:red'>
+    <input type="radio" name="smiley" value="sad" class='far fa-frown' style='font-size:48px;color:orangered'>
+    <input type="radio" name="smiley" value="ok" class='far fa-meh' style='font-size:48px;color:darkorange' >
+    <input type="radio" name="smiley" value="satis"class='far fa-smile' style='font-size:48px;color:green'>
+    <input type="radio" name="smiley" value="happy" class='far fa-grin-beam' style='font-size:48px;color:darkgreen'>
+    
+
+   <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

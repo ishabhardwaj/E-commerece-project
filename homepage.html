@@ -1,0 +1,333 @@
+<html> 
+<head> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><--!for device width-->
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" type="text/css" href="header.css">
+  <link rel="stylesheet" type="text/css" href="signupform.css">
+  <link rel="stylesheet" type="text/css" href="loginform.css">
+<style>
+.mySlides {display:none;}
+
+.title{
+  font-family: Brush script MT, Helvetica;
+  margin-left: 16px;
+  font-size: 22px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<title> Web site</title>
+  <body>
+  
+<div class="topnav1">
+     <a href="homepage.html"><img src="https://fashion.cloud/wp-content/uploads/2019/07/Fashion-Cloud-GmbH-Logo.png" style="width:4%;height:7%; margin-left: 30px; margin-top:3px; "> </a> 
+     <div class="title"> <b>Shop Cloud </b></div>
+    <div class="search-container">
+    <form action="/action_page.php">
+        <input type="text" placeholder="Search for products,brands..">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div> 
+    <div class="icon-bar"> 
+      <table>
+      <tr>
+     <td style="text-align:center;"><a onclick="openSignup()"><i class="fa fa-user"></i><span style="font-size:18; object-position: bottom; cursor: pointer;"><u>SignUp</u></span></a></td>
+     <td><a href="wishlist.html"><i class="fa fa-heart"></i><span style="font-size:18; object-position: bottom;">WishList</span></a> </td>
+      <td><a href="cart.html"><i class="fa fa-shopping-cart"></i><span style="font-size:18; object-position:bottom;">Cart</span></a> </td>
+     </tr>
+       </table>
+    </div>
+</div>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" action="/action_page.php" name="sign" method="post" onsubmit="return validateForm()">
+    <div class="container1">
+      <h1><center>Sign Up With Shop Cloud</center> </h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <div id="username_div">
+       <label for="user"><b>Username</b></label>
+       <input type="text" placeholder="Enter Username" name="user" required>
+       <div id="nameErr"></div>
+      </div>
+
+     <div id="email_div">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <div id="emailErr"></div>
+      </div>
+
+      <div id="password_div">
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <div id="passErr"></div>
+      </div>
+
+      <div id="pass_confirm_div">
+      <label for="psw-repeat"><b>Re-enter Password</b></label>
+      <input type="password" placeholder="Re-enter Password" name="psw-repeat" required>
+       <div id="passconErr"></div>
+     </div>
+
+     <div id="mob_div">
+      <label for="mob"><b>Mobile Number</b></label>
+      <input type="text" placeholder="Enter Mobile Number" name="mob" required>
+       <div id="mobileErr"></div>
+     </div>
+      
+      <div id="count_div">
+        <label for="country"><b>Country</b></label>
+        <select name="country">
+            <option>Select</option>
+            <option>Australia</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+        </select>
+        <div id="countryErr"></div>
+    </div>
+
+    <div id="gender_div">
+        <label for="gender"><b>Gender</b></label>
+        <div class="form-inline">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+        <div  id="genderErr"></div>
+    </div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbut">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+    <div class="topnav">
+	  			<center> 
+         <a href="men.html">Men</a>
+				 <a href="women.html">Women</a>
+         <a href="kids.html">Kids</a>
+         <a onclick="openForm()">Login</a>
+				 <a href="feedback.html">Feedback</a>
+		</div>
+    <div class="w3-content w3-section" style="max-width:1200px; max-height:200px;margin-left:70px; margin-top:10px; ">
+        <img class="mySlides" src="https://www.storyonline.co.il/media/resized/5.9-mainbanner_1.gif" style="width:110%;height:70%;">
+        <img class="mySlides" src="https://i.pinimg.com/originals/7a/50/5b/7a505be599c83a636433be63c0771f4f.gif" style="width:110%;height:70%;">
+        <img class="mySlides" src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/01780dd4396322b8145856c940052923/ca08fcd7-df31-4653-a310-8d9ab55d610a_rw_1200.gif?h=a03456ea88b8d51fe95146436b0c0181" style="width:110%;height:70%;">
+        <img class="mySlides" src="https://media1.giphy.com/media/3oL0Dokx5i09O/source.gif" style="width:110%;height:70%;">
+        <img class="mySlides" src="https://i.pinimg.com/originals/7c/f7/65/7cf765ca34d19fcf94902ed00768d155.gif" style="width:110%;height:70%;">
+    </div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="closebut" title="Close Modal">&times;</span>
+      <img src="https://image.flaticon.com/icons/svg/295/295128.svg" style="height: 20%; width: 20%;" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+       <span class="psw"><a href="#">Forgot password?</a></span>
+  </form>
+ </div>
+</div>
+<script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+    function openForm() {
+   document.getElementById("id01").style.display = "block";
+     }
+     var modal = document.getElementById('id01');
+     window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+     function openSignup() {
+   document.getElementById("id02").style.display = "block";
+    }  
+
+   
+    // Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "footer.html";
+  }
+}
+function printError(elemId, hintMsg) {
+    document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+// Defining a function to validate form 
+function validateForm() {
+    // Retrieving the values of form elements 
+    var name = document.sign.user.value;
+    var email = document.sign.email.value;
+    var mobile = document.sign.mob.value;
+    var country = document.sign.country.value;
+    var gender = document.sign.gender.value;
+    var password=document.sign.psw.value;
+    var pass_confirm=document.sign.psw-repeat.value;
+  // Defining error variables with a default value
+    var nameErr = passErr=passconErr= emailErr = mobileErr = countryErr = genderErr = true;
+    
+    // Validate name
+    if(name == "") {
+        printError("nameErr", "Please enter your name");
+    } else {
+        var regex = /^[a-zA-Z\s]+$/;                
+        if(regex.test(name) === false) {
+            printError("nameErr", "Please enter a valid name");
+        } else {
+            printError("nameErr", "");
+            nameErr = false;
+        }
+    }
+    
+    // Validate email address
+    if(email == "") {
+        printError("emailErr", "Please enter your email address");
+    } else {
+        // Regular expression for basic email validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if(regex.test(email) === false) {
+            printError("emailErr", "Please enter a valid email address");
+        } else{
+            printError("emailErr", "");
+            emailErr = false;
+        }
+    }
+    //Validate Password
+    if (password.value == "") {
+     printError("passErr", "Please enter your password");
+   } else {
+        // Regular expression for basic email validation
+        var regex =  /^[A-Za-z]\w{7,14}$/;
+        if(regex.test(password) === false) {
+            printError("passErr", "Please enter a valid password");
+        } else{
+            printError("passErr", "");
+            passErr = false;
+        }
+    }
+  // check if the two passwords match
+  if (password.value != pass_confirm.value) {
+   printError("passconErr", "The two passwords do not match");
+ }
+   else{
+            printError("passconErr", "");
+            passconErr = false;
+        }
+    // Validate mobile number
+    if(mobile == "") {
+        printError("mobileErr", "Please enter your mobile number");
+    } else {
+        var regex = /^[1-9]\d{9}$/;
+        if(regex.test(mobile) === false) {
+            printError("mobileErr", "Please enter a valid 10 digit mobile number");
+        } else{
+            printError("mobileErr", "");
+            mobileErr = false;
+        }
+    }
+    
+    // Validate country
+    if(country == "Select") {
+        printError("countryErr", "Please select your country");
+    } else {
+        printError("countryErr", "");
+        countryErr = false;
+    }
+    
+    // Validate gender
+    if(gender == "") {
+        printError("genderErr", "Please select your gender");
+    } else {
+        printError("genderErr", "");
+        genderErr = false;
+    }
+    
+    // Prevent the form from being submitted if there are any errors
+    if((nameErr || emailErr || mobileErr || countryErr || genderErr) == true) {
+       return false;
+    } 
+  }
+</script>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br>
+    <div class="row">
+      <div class="column">
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/3d79e71d-d68a-423d-9b84-8f20a4f964eb1579171123357-HP-Top-Libas_880ba63f-7a75-4a4b-b80c-b4657a074fc8.jpg" alt="Snow" style="width:100%;max-width:300px;max-height:400px;"> </a>
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/e36a168a-76ca-4e5b-9b97-2cbc7066b0ea1579171256044-HP-Top-Jack-_-Jones_4e6e20ad-cfb8-4c09-8280-9f0b43a73d4b.jpg" alt="Mountains" style="width:100%;max-width:300px;max-height: 400px;">
+      </div>
+      <div class="column">
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/4cf0cc4f-6ff2-4f6d-892e-23fd1fd7b4831579171255967-HP-Top-Vero-Moda_b1ef2c87-7717-422a-bf93-66865ebe2618.jpg" alt="Forest" style="width:100%;max-width:300px;max-height: 400px;">
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/b956addc-c956-4cb7-bd09-321c389e14211579171123537-HP-Top-Anouk_8ba2a948-842b-4527-9530-23c12fda5166.jpg" alt="Mountains" style="width:100%;max-width:300px;max-height: 400px;">
+      </div>
+      <div class="column">
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/63af1d7e-ce0b-4016-8e69-506e3ffdfb991579171256009-HP-Top-Nike_dfd8c97a-d641-4acf-855f-5ce441afa880.jpg" alt="Mountains" style="width:100%;max-width:300px;max-height: 400px;">
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/e66ab1f1-1bdb-4613-9c57-0c4fe0ef057a1579171123448-HP-Top-H_M_506ccced-243c-4c37-9b17-fa0c6d58a211.jpg" alt="Mountains" style="width:100%;max-width:300px;max-height: 400px;">
+      </div>
+      <div class="column">
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/b4cf54f8-6560-49ac-ad71-2f46cf7b86081579171123399-HP-Top-HRX_cd1583de-9c78-4294-9f00-3d6cfea6d570.jpg" alt="Mountains" style="width:100%;max-width:300px;max-height: 400px;">
+        <a href="men.html"><img src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2020/1/16/7e897864-9d45-4911-812c-4ef0903b047e1579171123491-HP-Top-Carlton-London_a478d6f3-4fc4-4c78-9a04-113390e8c5a3.jpg" alt="Mountains" style="width:100%;max-width:300px;max-height: 400px;">
+      </div>
+   </div>
+   <footer>
+    <br>
+    <p style="text-align:center">
+        <a href="contact.html" style="color:black"><b>Contact Us : </b></a><br><br>
+<!--Twitter icon-->
+<a href="http://twitter.com" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/ueBIjxRoTBuYR6XWW1iO_v3qVW5nRUq5VZF9RQXi2_twitter.png" /> </a>&nbsp; &nbsp; &nbsp;
+<!--Google+ icon-->
+<a href="http://plus.google.com" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/gHd2XoyiQbKBqljm7bzg_63j3xtd7SX28TTMeOSfZ_google.png" /> </a>&nbsp; &nbsp;&nbsp;
+<!--FB icon-->
+<a href="http://facebook.com" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/MsIJsIsDT9WLAxxH4aIK_OgdHV3vxSR2737LGd8cq_facebook.png" /> </a>&nbsp; &nbsp;&nbsp;
+<!--Pinterest icon-->
+<a href="http://pinterest.com" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/b8Xt2lN8TCKhilmoHXGW_TCjqF6FgS86WoWzUOQCh_pinterest.png" /> </a>
+</p>    
+</footer>
+</body>
+</html>
